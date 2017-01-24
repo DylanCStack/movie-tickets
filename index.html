@@ -15,147 +15,159 @@
     <div class="container">
       <form id="movieTickets">
         <div class="movies new">
-          <h2>The Flounder</h2>
+          <label class="movieTitle">
+            <input type="checkbox" name="movieTitle" value="The Flounder">
+            The Flounder
+          </label>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="11:00">
+              <input type="radio" name="flounderShowtime" value="11:00" disabled>
               11:00
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="2:00">
+              <input type="radio" name="flounderShowtime" value="2:00" disabled>
               2:00
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="4:00">
+              <input type="radio" name="flounderShowtime" value="4:00" disabled>
               4:00
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="6:30">
+              <input type="radio" name="flounderShowtime" value="6:30" disabled>
               6:30
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="9:30">
+              <input type="radio" name="flounderShowtime" value="9:30" disabled>
               9:30
             </label>
           </div>
         </div>
         <div class="movies new">
-          <h2>Fast and Crazy</h2>
+          <label class="movieTitle">
+            <input type="checkbox" name="movieTitle" value="Fast and Crazy">
+            Fast and Crazy
+          </label>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="11:00">
+              <input type="radio" name="fastShowtime" value="11:00" disabled>
               11:00
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="1:30">
+              <input type="radio" name="fastShowtime" value="1:30" disabled>
               1:30
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="3:15">
+              <input type="radio" name="fastShowtime" value="3:15" disabled>
               3:15
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="4:45">
+              <input type="radio" name="fastShowtime" value="4:45" disabled>
               4:45
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="6:30">
+              <input type="radio" name="fastShowtime" value="6:30" disabled>
               6:30
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="9:00">
+              <input type="radio" name="fastShowtime" value="9:00" disabled>
               9:00
             </label>
           </div>
         </div>
         <div class="movies">
-          <h2>Car Wars: No Fun</h2>
+          <label class="movieTitle">
+            <input type="checkbox" name="movieTitle" value="Car Wars: No Fun">
+            Car Wars: No Fun
+          </label>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="12:30">
+              <input type="radio" name="carShowtime" value="12:30" disabled>
               12:30
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="2:15">
+              <input type="radio" name="carShowtime" value="2:15" disabled>
               2:15
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="3:40">
+              <input type="radio" name="carShowtime" value="3:40" disabled>
               3:40
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="5:00">
+              <input type="radio" name="carShowtime" value="5:00" disabled>
               5:00
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="6:45">
+              <input type="radio" name="carShowtime" value="6:45" disabled>
               6:45
             </label>
           </div>
         </div>
         <div class="movies">
-          <h2>Mission Incomprehensible 5</h2>
+          <label class="movieTitle">
+            <input type="checkbox" name="movieTitle" value="Mission Incomprehensible 5">
+            Mission Incomprehensible 5
+          </label>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="1:00">
+              <input type="radio" name="missionShowtime" value="1:00" disabled>
               1:00
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="2:45">
+              <input type="radio" name="missionShowtime" value="2:45" disabled>
               2:45
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="3:50">
+              <input type="radio" name="missionShowtime" value="3:50" disabled>
               3:50
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="5:30">
+              <input type="radio" name="missionShowtime" value="5:30" disabled>
               5:30
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="Showtime" value="7:00">
+              <input type="radio" name="missionShowtime" value="7:00" disabled>
               7:00
             </label>
           </div>
         </div>
         <select name="ageGroup" id="ageGroup">
-          <option value="adult">ADULT - 13-65</option>
-          <option value="child">CHILD - 12 or under</option>
-          <option value="senior">SENIOR - 65 or older</option>
+          <option value="0">ADULT - 13-65</option>
+          <option value="-2">CHILD - 12 or under</option>
+          <option value="-3">SENIOR - 65 or older</option>
         </select>
         <select name="discount" id="discount">
           <option value="0">No Discount</option>
