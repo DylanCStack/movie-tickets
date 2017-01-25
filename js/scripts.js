@@ -37,7 +37,8 @@ $(document).ready(function() {
        newTicket.showings.push(newShowing);
      }
     })
-    
+
+    $("#output").text(newTicket.calculatePrice());
 
 
     // var movieTitles = [];
