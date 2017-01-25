@@ -19,21 +19,25 @@ $(document).ready(function() {
 
   $("form#movieTickets").submit(function(event) {
     event.preventDefault();
-    var ageDiscount = parseInt($("#ageGroup").val());
+    var ageDiscount = parseInt($("#ageGroup").val());//aquiring input for next 3 lines
     var demographicDiscount = parseInt($("#discount").val());
     var ticketCount = parseInt($("#ticket-count").val());
 
-    var newTicket = new ticket(ageDiscount, demographicDiscount, ticketCount);
+    var newTicket = new ticket(ageDiscount, demographicDiscount, ticketCount);// applying input
 
 
     $(".movies").each(function(){
-       var title = $("input:checkbox:checked").val();//
-       var time = $("input:radio[name=showtime]:checked").val()//
-       var newRelease = $(this).hasClass("new");//
+      if($(this).children("label").children("input:checkbox:checked").val()){
 
-       var newShowing = new showing(title, time, newRelease);
+       var title = $(this).children("label").children("input:checkbox:checked").val();
+       var time = parseInt($(this).children("div").children("label").children("input:checked").val());
+       var newRelease = $(this).hasClass("new");
+
+       var newShowing = new showing(title, newRelease,time);
        newTicket.showings.push(newShowing);
+     }
     })
+    
 
 
     // var movieTitles = [];
